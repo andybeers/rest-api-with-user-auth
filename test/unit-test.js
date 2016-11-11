@@ -76,3 +76,4 @@ describe('Character model', () => {
   });
   
 });
+

@@ -14,7 +14,6 @@ describe('RESTful API for characters resource', () => {
   before(done => {
     request
       .post('/api/auth/signup')
-      .set('authorization', token)
       .send({ username: 'testU2', password: 'testPW'})
       .then(({ body }) => {
         assert.ok(token = body.token);
